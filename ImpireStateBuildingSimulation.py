@@ -7,7 +7,7 @@ np.random.seed()
 all_walks = []
 
 # Simulate random walk 500 times
-for i in range(500):
+for i in range(1):
     random_walk = [0]
     for x in range(100):
         step = random_walk[-1]
@@ -37,14 +37,14 @@ np_aw_t = np.transpose(np_aw)
 plt.plot(np_aw_t)
 plt.show()
 
-# Select last row from np_aw_t: ends
-ends = np_aw_t[-1, :]
+# # Select last row from np_aw_t: ends
+# ends = np_aw_t[-1, :]
 
-# Plot histogram of ends, display plot
-print(ends)
-plt.hist(ends)
-plt.show()
+# # Plot histogram of ends, display plot
+# print(ends)
+# plt.hist(ends)
+# plt.show()
 
-# Calculate the odds of reaching 60 steps
-odds = np.mean(ends >= 60)
-print(odds)
+# # Calculate the odds of reaching 60 steps
+# odds = np.mean(ends >= 60)
+# print(odds)
