@@ -11,7 +11,7 @@ for i in range(500):
     random_walk = [0]
     for x in range(100):
         step = random_walk[-1]
-        dice = np.random.randint(1,7)
+        dice = np.random.randint(1, 7)
 
         # Determine the direction of the next step
         if dice <= 2:
@@ -19,7 +19,7 @@ for i in range(500):
         elif dice <= 5:
             step = step + 1
         else:
-            step = step + np.random.randint(1,7)
+            step = step + np.random.randint(1, 7)
 
         # Implement clumsiness
         if np.random.rand() <= 0.001:
@@ -38,7 +38,7 @@ plt.plot(np_aw_t)
 plt.show()
 
 # Select last row from np_aw_t: ends
-ends = np_aw_t[-1,:]
+ends = np_aw_t[-1, :]
 
 # Plot histogram of ends, display plot
 print(ends)
